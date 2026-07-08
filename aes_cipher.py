@@ -1,6 +1,7 @@
 import hashlib,base64,os
 from Crypto.Cipher import AES
 from Crypto import Random
+import random,string
 SZ=16
 def pad(s):
     padlen=SZ-len(s)%SZ

@@ -1,8 +1,8 @@
-import user,socket,threading,os,datetime,time
+import user,socket,threading,os,datetime,time,random
 from aes_cipher import encrypt,decrypt
 users=[]
 allmsg=[]
-key="1384"
+key="11228"
 def send_server():
     while True:
         msg=input()
@@ -126,7 +126,7 @@ while True:
         print("Wrong command")
         continue
 print(user)
-with open(f"C:/Users/goatt/OneDrive/Desktop/fgh/information.txt","a") as f:
+with open(f"information.txt","a") as f:
     f.write(user.firstname+"\n")
     f.write(user.lastname+"\n")
     f.write(user.username+"\n")
