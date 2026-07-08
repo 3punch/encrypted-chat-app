@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+data/temp.txt
+data/information.txt
+
+*.log
